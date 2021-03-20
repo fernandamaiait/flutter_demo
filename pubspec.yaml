@@ -34,7 +34,7 @@ dev_dependencies:
     sdk: flutter
   flutter_driver:
     sdk: flutter
-  args: ^2.0.0
+  args:
   grinder: ^0.9.0-nullsafety.0
   path: ^1.8.0
   pedantic: ^1.10.0

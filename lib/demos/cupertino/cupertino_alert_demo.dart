@@ -237,61 +237,61 @@ class _CupertinoAlertDemoState extends State<CupertinoAlertDemo>
     BuildContext context,
     Object arguments,
   ) {
-    return CupertinoModalPopupRoute<String>(
-      builder: (context) => ApplyTextOptions(
-        child: CupertinoActionSheet(
-          title: Text(
-            GalleryLocalizations.of(context).cupertinoAlertFavoriteDessert,
-          ),
-          message: Text(
-            GalleryLocalizations.of(context).cupertinoAlertDessertDescription,
-          ),
-          actions: [
-            CupertinoActionSheetAction(
-              child: Text(
-                GalleryLocalizations.of(context).cupertinoAlertCheesecake,
-              ),
-              onPressed: () => Navigator.of(
-                context,
-              ).pop(
-                GalleryLocalizations.of(context).cupertinoAlertCheesecake,
-              ),
-            ),
-            CupertinoActionSheetAction(
-              child: Text(
-                GalleryLocalizations.of(context).cupertinoAlertTiramisu,
-              ),
-              onPressed: () => Navigator.of(
-                context,
-              ).pop(
-                GalleryLocalizations.of(context).cupertinoAlertTiramisu,
-              ),
-            ),
-            CupertinoActionSheetAction(
-              child: Text(
-                GalleryLocalizations.of(context).cupertinoAlertApplePie,
-              ),
-              onPressed: () => Navigator.of(
-                context,
-              ).pop(
-                GalleryLocalizations.of(context).cupertinoAlertApplePie,
-              ),
-            ),
-          ],
-          cancelButton: CupertinoActionSheetAction(
-            child: Text(
-              GalleryLocalizations.of(context).cupertinoAlertCancel,
-            ),
-            isDefaultAction: true,
-            onPressed: () => Navigator.of(
-              context,
-            ).pop(
-              GalleryLocalizations.of(context).cupertinoAlertCancel,
-            ),
-          ),
-        ),
-      ),
-    );
+    // return CupertinoModalPopupRoute<String>(
+    //   builder: (context) => ApplyTextOptions(
+    //     child: CupertinoActionSheet(
+    //       title: Text(
+    //         GalleryLocalizations.of(context).cupertinoAlertFavoriteDessert,
+    //       ),
+    //       message: Text(
+    //         GalleryLocalizations.of(context).cupertinoAlertDessertDescription,
+    //       ),
+    //       actions: [
+    //         CupertinoActionSheetAction(
+    //           child: Text(
+    //             GalleryLocalizations.of(context).cupertinoAlertCheesecake,
+    //           ),
+    //           onPressed: () => Navigator.of(
+    //             context,
+    //           ).pop(
+    //             GalleryLocalizations.of(context).cupertinoAlertCheesecake,
+    //           ),
+    //         ),
+    //         CupertinoActionSheetAction(
+    //           child: Text(
+    //             GalleryLocalizations.of(context).cupertinoAlertTiramisu,
+    //           ),
+    //           onPressed: () => Navigator.of(
+    //             context,
+    //           ).pop(
+    //             GalleryLocalizations.of(context).cupertinoAlertTiramisu,
+    //           ),
+    //         ),
+    //         CupertinoActionSheetAction(
+    //           child: Text(
+    //             GalleryLocalizations.of(context).cupertinoAlertApplePie,
+    //           ),
+    //           onPressed: () => Navigator.of(
+    //             context,
+    //           ).pop(
+    //             GalleryLocalizations.of(context).cupertinoAlertApplePie,
+    //           ),
+    //         ),
+    //       ],
+    //       cancelButton: CupertinoActionSheetAction(
+    //         child: Text(
+    //           GalleryLocalizations.of(context).cupertinoAlertCancel,
+    //         ),
+    //         isDefaultAction: true,
+    //         onPressed: () => Navigator.of(
+    //           context,
+    //         ).pop(
+    //           GalleryLocalizations.of(context).cupertinoAlertCancel,
+    //         ),
+    //       ),
+    //     ),
+    //   ),
+    // );
   }
 
   @override
